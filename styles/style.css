@@ -19,6 +19,21 @@ h1, h2, h3 {
   text-shadow: -0.1em 0 20px #7dff47;
 }
 
+.link {
+  display: block;
+  padding: .1em;
+  text-indent: 1em;
+  text-decoration: none;
+}
+
+.link p {
+  color: white;
+}
+
+.link:hover p, .link:hover h3 {
+  color: #EA7AF4;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -56,6 +71,12 @@ footer cite {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.display-flex.align-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .display-flex.place-center {

@@ -18,8 +18,17 @@ h1, h2, h3{
     font-weight: 600;
     text-shadow: -.1em 0 20px lighten($color-primary, 5);
 }
-quote{
-    
+.link{
+    display: block;
+    padding: .1em;
+    text-indent: 1em;
+    text-decoration: none;
+    & p{
+        color: white;
+    }
+    &:hover p, &:hover h3{
+        color: $color-accent;
+    }
 }
 
 footer{
@@ -51,6 +60,9 @@ footer{
 
     &.align-center{
         align-items: center;
+    }
+    &.align-start{
+        align-items: flex-start;
     }
     &.place-center{
         align-items: center;
