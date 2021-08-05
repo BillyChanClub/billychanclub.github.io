@@ -1,0 +1,80 @@
+$color-primary: #6BFF2D;
+$color-secondary: #41658A;
+$color-accent: #EA7AF4;
+$color-background: #020402;
+*,*::before,*::after{box-sizing: border-box;}
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: $color-background;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3{
+    color: $color-primary;
+    font-family: "El Messiri", sans-serif;
+    font-weight: 600;
+    text-shadow: -.1em 0 20px lighten($color-primary, 5);
+}
+quote{
+    
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    & cite{
+        font-size: .75em;
+        text-decoration: underline;
+    }
+}
+.img{
+    &-small{
+        width: 64px;
+        min-width: 52px;
+        height: auto;
+    }
+}
+.separator{
+    width: 100%;
+    color: $color-primary;
+    border-style: dashed;
+    border-width: 1px;
+}
+.width{
+    width: clamp(0%, 50em, 95vw);
+}
+.display-flex{
+    display: flex;
+
+    &.align-center{
+        align-items: center;
+    }
+    &.place-center{
+        align-items: center;
+        justify-content: center;
+    }
+    &.flex-column{
+        flex-direction: column;
+    }
+    &.justify-start{
+        justify-content: flex-start;
+    }
+    &.flex-wrap{
+        flex-wrap: wrap;
+    }
+}
+.no-shrink{
+    flex-shrink: 0;
+}
+
+.mt{
+    &-l{
+        margin-top: 5em;
+    }
+    &-m{
+        margin-top: 3em;
+    }
+}
